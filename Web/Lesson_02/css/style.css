@@ -1,0 +1,40 @@
+.text {
+  background-color: cadetblue;
+  color: white;
+}
+.text2 {
+  background-color: burlywood;
+  color: white;
+}
+.text3 {
+  background-color: darkcyan;
+  color: white;
+}
+.span {
+  background-color: darkcyan;
+  color: white;
+}
+.span2 {
+  background-color: darkslateblue;
+  color: white;
+}
+.div {
+  background-color: darkgoldenrod;
+  color: white;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 3px solid darkmagenta;
+  border-radius: 50%;
+}
+.div2 {
+  background-color: darkgoldenrod;
+  color: white;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 3px solid darkmagenta;
+  border-top-right-radius: 40px;
+  transform: rotate(-45deg);
+  margin-left: 36px;
+}

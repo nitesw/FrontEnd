@@ -1,0 +1,35 @@
+* {
+  background-color: #f6f6f6;
+}
+.mainDiv {
+  margin: 0 25%;
+}
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.otherHeaders {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.formulaDiv {
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0;
+}
+.formulaP {
+  background-color: lightcoral;
+  display: inline;
+  padding: 5px 10px;
+}
+.formulaSup {
+  background-color: lightcoral;
+}
+.specialLetter {
+  font-weight: bold;
+  color: darkred;
+  font-style: italic;
+}
