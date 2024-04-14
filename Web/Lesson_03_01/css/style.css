@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+}
+
+.mainMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.menu {
+  display: inline-block;
+  padding: 0;
+}
+.menu li {
+  display: inline-block;
+}
+.defaultItem {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-weight: 700;
+  border-radius: 2px;
+}
+.defaultItem:hover {
+  background-color: #7cdeda;
+  color: white;
+}
+.defaultItem:focus {
+  background-color: #7cdeda;
+  color: black;
+}
+.specialItem {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-weight: 700;
+  border-radius: 2px;
+  background-color: #f26695;
+  color: white;
+}
+.mainLogo {
+  width: 262px;
+  height: 63px;
+  margin-right: 100px;
+}
+
+.topMenu {
+  display: flex;
+  background-color: #0d93a3;
+  height: 60px;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: sans-serif;
+  color: white;
+}
+.topMenuItems {
+  display: flex;
+  align-items: center;
+}
+.localSitesImgs {
+  display: flex;
+}
+.localSitesImgs a {
+  margin-left: 10px;
+}
+.localSitesImgs img {
+  height: 32px;
+  width: 32px;
+}
+.topMenuList2 {
+  display: flex;
+  align-items: center;
+}
+.topMenuList2 li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.topMenuList2 li button {
+  height: 35px;
+  border-radius: 4px;
+}
+.phoneBtn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.phoneBtn:hover {
+  background-color: #c5e4e9;
+  color: #0d93a3;
+}
+.onlineChatBtn {
+  color: #0d93a3;
+  background-color: white;
+  border: 1px solid white;
+}
+.onlineChatBtn:hover {
+  background-color: #c5e4e9;
+}
+.loginBtn {
+  color: white;
+  background-color: #52579c;
+  border: 1px solid #52579c;
+}
