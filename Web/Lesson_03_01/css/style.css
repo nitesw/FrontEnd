@@ -47,7 +47,7 @@
   margin-right: 100px;
 }
 
-.topMenu {
+header {
   display: flex;
   background-color: #0d93a3;
   height: 60px;

@@ -1,0 +1,36 @@
+.special-btn {
+  background-color: #f26695;
+  border-radius: 2px;
+}
+.nav-ul-text {
+  color: black;
+}
+.nav-ul-text:hover {
+  background-color: #7cdeda;
+  border-radius: 2px;
+}
+.nav-color {
+  background-color: #0d93a3;
+}
+.local-sites-us-img img {
+  width: 32px;
+  height: 32px;
+}
+.local-sites-ca-img img {
+  width: 32px;
+  height: 32px;
+}
+.contact-panel-chat-btn {
+  background-color: white;
+  color: #0d93a3;
+}
+.contact-panel-btn:hover {
+  background-color: #c5e4e9;
+  color: #0d93a3;
+}
+.contact-panel-login-btn {
+  background-color: #52579c;
+}
+.contact-panel-login-btn:hover {
+  background-color: #52579c;
+}
