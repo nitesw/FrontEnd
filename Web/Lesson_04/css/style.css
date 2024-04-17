@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 .block1 {
   height: 100px;
   background-color: blueviolet;
@@ -13,4 +16,35 @@
 .block4 {
   height: 100px;
   background-color: brown;
+}
+
+.logo {
+  display: inline-block;
+  height: 100px;
+  width: 100%;
+}
+.logo img {
+  display: inline-block;
+  height: 100px;
+}
+.bg-image {
+  height: 350px;
+  background-image: url(../img/main-logo.svg);
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-color: pink;
+  background-position: 50% 50%;
+  /* background-position: 50%; */
+}
+@media (width < 1400px) {
+  .logo img {
+    display: inline-block;
+    height: auto;
+  }
+}
+@media (width < 1200px) {
+  .logo img {
+    display: inline-block;
+    height: 100px;
+  }
 }
