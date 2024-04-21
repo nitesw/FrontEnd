@@ -102,7 +102,7 @@
       <div class="container-fluid middle-menu">
         <div class="container">
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 col-sm-12 col-xs-12">
               <div class="middle-menu-items">
                 <span class="man">
                   <img
@@ -193,9 +193,55 @@
                       <input
                         type="text"
                         class="select-pages"
-                        value="1"
+                        data-max="500"
+                        data-min="1"
+                        value="1 / 300 words"
                         readonly
                       />
+                    </div>
+                    <label class="label-for-form" for="currency"
+                      >Currency</label
+                    >
+                    <div class="currency" id="currency">
+                      <input
+                        type="button"
+                        id="usd-btn"
+                        class="currency-btn"
+                        value="USD"
+                      />
+                      <input
+                        type="button"
+                        id="eur-btn"
+                        class="currency-btn"
+                        value="EUR"
+                      />
+                      <input
+                        type="button"
+                        id="cad-btn"
+                        class="currency-btn"
+                        value="CAD"
+                      />
+                      <input
+                        type="button"
+                        id="aud-btn"
+                        class="currency-btn"
+                        value="AUD"
+                      />
+                    </div>
+                    <input type="checkbox" class="checkbox-order" checked />
+                    <span class="checkmark"></span>
+                    <p class="checkbox-text">
+                      First Order Discount 15% For New Clients
+                    </p>
+                    <div class="sidebar-total">
+                      ORDER TOTAL:
+                      <span class="mini-order-first-price"
+                        >&nbsp;$&nbsp;10.19</span
+                      >
+                      <span class="mini-order-total-price">$&nbsp;11.99</span>
+                    </div>
+                    <div class="sidebar-order-btn">
+                      <a href="#">ORDER NOW</a>
                     </div>
                   </form>
                 </div>
@@ -235,6 +281,6 @@
       </div>
     </header>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/hamburger.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

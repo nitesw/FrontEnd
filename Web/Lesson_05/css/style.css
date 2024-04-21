@@ -181,15 +181,22 @@ nav {
   text-align: center;
 }
 .m {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid white;
   border-radius: 1px;
   width: 44px;
   height: 42px;
   background-color: #52579c;
   color: white;
+  font-size: 20px;
   font-weight: bolder;
 }
 .p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid white;
   border-radius: 1px;
   order: 2;
@@ -197,7 +204,66 @@ nav {
   height: 42px;
   background-color: #52579c;
   color: white;
+  font-size: 20px;
   font-weight: bolder;
+}
+.currency {
+  display: flex;
+  align-items: center;
+}
+.currency-btn {
+  height: 40px;
+  width: 75px;
+  border: 1px solid #f26695;
+  background-color: white;
+}
+.currency-btn:focus {
+  background-color: #f26695;
+  color: white;
+}
+.checkbox-order {
+  margin: 10px 10px 10px 0px;
+}
+.checkbox-text {
+  display: inline-block;
+  color: white;
+}
+.sidebar-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.mini-order-first-price {
+  color: #30bf78;
+  font-size: 19px;
+  font-weight: bold;
+}
+.mini-order-total-price {
+  margin-left: 5px;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.sidebar-order-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-order-btn a {
+  text-decoration: none;
+  color: white;
+  background-color: #30bf78;
+  padding: 10px 96px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 18px;
+  opacity: 0.6;
+  transition: 0.4s;
+}
+.sidebar-order-btn a:hover {
+  opacity: 1;
 }
 
 .middle-menu-text {
