@@ -98,4 +98,7 @@
 }
 
 @media (max-width: 1024px) {
+  .main-logo {
+    width: 180px;
+  }
 }
