@@ -61,13 +61,15 @@
   color: black;
   font-size: 14px;
 }
-.main-logo {
-  margin: 15px 0px;
-}
-.nav-menu-items-settings {
+.nav-menu-settings {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+.main-logo {
+  width: 269px;
+  margin: 15px 0px;
 }
 .nav-mobile-btn {
   display: flex;
@@ -79,7 +81,7 @@
   align-items: center;
 }
 .nav-item {
-  display: block;
+  display: inline-block;
   font-weight: 700;
   padding: 10px;
   border-radius: 2px;
@@ -93,4 +95,7 @@
 }
 .nav-spec-item:hover {
   background-color: #f26695;
+}
+
+@media (max-width: 1024px) {
 }
