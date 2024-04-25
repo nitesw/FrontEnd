@@ -163,6 +163,21 @@
 .main-menu {
   height: 655px;
 }
+.main-menu-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 35px;
+}
+.main-menu-man {
+  position: absolute;
+  top: 45px;
+  right: -183px;
+  bottom: -35px;
+  z-index: -1;
+}
 .main-menu-text-settings {
   margin-top: 40px;
 }
@@ -221,6 +236,11 @@
   background-position: right bottom;
 }
 
+@media (width < 1280px) {
+  .main-menu-man {
+    right: -120px;
+  }
+}
 @media (width < 1200px) {
   .main-menu-top-text {
     font-size: 29px;
@@ -231,10 +251,23 @@
   .main-menu-bottom-text {
     font-size: 22px;
   }
+  .main-menu-man {
+    top: 156px;
+    bottom: -35px;
+    right: -130px;
+  }
+  .main-menu-man img {
+    width: 254px;
+    height: 499px;
+  }
 }
 @media (width < 1024px) {
   .main-logo {
     width: 180px;
+  }
+
+  .main-menu-man {
+    display: none;
   }
 }
 @media (width < 768px) {
