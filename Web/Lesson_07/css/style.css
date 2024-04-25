@@ -159,6 +159,63 @@
 .main-menu {
   height: 655px;
 }
+.main-menu-text-settings {
+  margin-top: 40px;
+}
+.main-menu-text {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main-menu-top-text {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 45px 0px;
+}
+.main-menu-top-text strong {
+  font-size: 56px;
+  color: #f26695;
+  font-weight: 500;
+}
+.main-menu-top-text span {
+  font-size: 29px;
+}
+.main-menu-middle-text {
+  font-size: 20px;
+  margin: 20px 0px;
+}
+.main-menu-bottom-text {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 25px 0px;
+}
+.main-menu-bottom-text strong {
+  font-size: 41px;
+}
+.main-menu-order-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-menu-order-btn-a {
+  text-decoration: none;
+  color: #cccccc;
+  background: linear-gradient(to right, #c25277 50%, #f26695 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  margin-left: 10px;
+  transition: all 1s ease;
+  padding: 15px 60px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.main-menu-order-btn-a:hover {
+  color: white;
+  background-position: right bottom;
+}
 
 @media (width < 1024px) {
   .main-logo {
