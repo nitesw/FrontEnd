@@ -183,6 +183,7 @@
 }
 .main-menu-middle-text {
   font-size: 20px;
+  font-weight: 500;
   margin: 20px 0px;
 }
 .main-menu-bottom-text {
@@ -205,7 +206,6 @@
   background: linear-gradient(to right, #c25277 50%, #f26695 50%);
   background-size: 200% 100%;
   background-position: left bottom;
-  margin-left: 10px;
   transition: all 1s ease;
   padding: 15px 60px;
   border: 1px solid white;
@@ -217,6 +217,17 @@
   background-position: right bottom;
 }
 
+@media (width < 1200px) {
+  .main-menu-top-text {
+    font-size: 29px;
+  }
+  .main-menu-top-text strong {
+    font-size: 38px;
+  }
+  .main-menu-bottom-text {
+    font-size: 22px;
+  }
+}
 @media (width < 1024px) {
   .main-logo {
     width: 180px;
@@ -234,5 +245,39 @@
     height: 16px;
     width: 16px;
     margin-left: 2px;
+  }
+
+  .main-menu-text-settings {
+    margin-top: 20px;
+  }
+  .main-menu-top-text {
+    font-size: 27px;
+    font-weight: 400;
+    margin: 0px;
+  }
+  .main-menu-top-text strong {
+    font-size: 30px;
+  }
+  .main-menu-top-text span {
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .main-menu-middle-text {
+    font-size: 14px;
+    font-weight: 100;
+    margin: 10px 0px 0px 0px;
+  }
+  .main-menu-bottom-text {
+    font-size: 22px;
+    font-weight: 100;
+    margin: 15px 0px 25px 0px;
+  }
+  .main-menu-bottom-text strong {
+    font-size: 22px;
+    font-weight: 100;
+  }
+  .main-menu-order-btn-a {
+    padding: 10px 60px;
+    font-size: 13px;
   }
 }
