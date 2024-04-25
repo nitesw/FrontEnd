@@ -171,6 +171,22 @@
   z-index: 0;
   margin-bottom: 35px;
 }
+.main-menu-essay-calc {
+  width: 350px;
+  height: 620px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
+  background-color: rgba(111, 115, 173, 0.6);
+  padding: 0px 25px;
+}
+.main-menu-essay-calc-label {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+}
 .main-menu-man {
   position: absolute;
   top: 45px;
@@ -284,6 +300,13 @@
     margin-left: 2px;
   }
 
+  .main-menu {
+    height: 1058px;
+  }
+  .main-menu-items {
+    justify-content: center;
+    align-items: center;
+  }
   .main-menu-text-settings {
     margin-top: 20px;
   }
