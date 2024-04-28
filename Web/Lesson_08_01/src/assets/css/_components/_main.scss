@@ -1,12 +1,12 @@
 @import "./header";
+@import "./top_navbar";
 @import "./navbar";
 @import "./footer";
 
-.blog{
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-
+.blog {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
 }
-header{
-    font-family: $base_font;
+header {
+  font-family: $base_font;
 }
