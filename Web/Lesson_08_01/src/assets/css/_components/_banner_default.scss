@@ -1,0 +1,54 @@
+.other-menu {
+  background-color: #52579c;
+  height: 324px;
+  font-family: sans-serif;
+}
+.other-menu-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.other-menu-man img {
+  margin-top: 20px;
+  margin-left: 217px;
+  height: 285px;
+  width: 145px;
+}
+.other-menu-text {
+  margin-right: 171px;
+  color: white;
+  text-align: center;
+}
+.other-menu-top-text {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.other-menu-top-text strong {
+  font-size: 50px;
+  color: #f26695;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.other-menu-top-text span {
+  font-size: 29px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.other-menu-middle-text {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 18px 0px;
+}
+.other-menu-bottom-text {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
