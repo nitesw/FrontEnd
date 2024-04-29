@@ -1,3 +1,7 @@
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
 .main-logo-img {
   height: auto;
   width: 269px;
@@ -6,14 +10,14 @@
 .nav-menu-items {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   list-style: none;
-  font-family: sans-serif;
   font-size: 14px;
+  font-family: $bold_base_font;
 }
 .nav-item {
   display: inline-block;
   color: black;
-  font-weight: 700;
   text-decoration: none;
   padding: 10px;
   border-radius: 2px;
@@ -27,4 +31,16 @@
 }
 .nav-spec-item:hover {
   background-color: #f26695;
+}
+
+@media (width < 1200px) {
+  .main-logo-img {
+    width: 213px;
+  }
+  .nav-menu-items {
+    font-size: 13px;
+  }
+  .nav-item {
+    padding: 5px;
+  }
 }

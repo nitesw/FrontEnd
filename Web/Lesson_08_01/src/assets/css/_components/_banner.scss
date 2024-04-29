@@ -1,7 +1,7 @@
 .main-menu {
   background-color: #52579c;
   height: 655px;
-  font-family: sans-serif;
+  font-family: $base_font;
 }
 .main-menu-items {
   display: flex;
@@ -16,7 +16,6 @@
   height: 620px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
   background-color: rgba(111, 115, 173, 0.6);
-  padding: 0px 25px;
 }
 .main-menu-essay-calc-label {
   display: inline-block;
@@ -30,11 +29,14 @@
 .main-menu-man {
   position: absolute;
   top: 45px;
+  left: 330px;
   right: -183px;
   bottom: -35px;
   z-index: -1;
 }
 .main-menu-text-settings {
+  display: flex;
+  justify-content: flex-end;
   margin-top: 40px;
 }
 .main-menu-text {
@@ -44,7 +46,7 @@
 }
 .main-menu-top-text {
   font-size: 45px;
-  font-weight: bold;
+  font-family: $bold_base_font;
   line-height: 1.2;
   margin: 45px 0px;
 }
@@ -58,7 +60,6 @@
 }
 .main-menu-middle-text {
   font-size: 20px;
-  font-weight: 500;
   margin: 20px 0px;
 }
 .main-menu-bottom-text {
@@ -90,4 +91,29 @@
 .main-menu-order-btn-a:hover {
   color: white;
   background-position: right bottom;
+}
+
+@media (width < 1200px) {
+  .main-menu-top-text {
+    font-size: 29px;
+  }
+  .main-menu-top-text strong {
+    font-size: 38px;
+  }
+  .main-menu-bottom-text {
+    font-size: 22px;
+  }
+  .main-menu-man {
+    top: 156px;
+    bottom: -35px;
+    right: -130px;
+  }
+  .main-menu-man img {
+    width: 254px;
+  }
+}
+@media (width < 992px) {
+  .main-menu-man {
+    display: none;
+  }
 }
