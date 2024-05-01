@@ -1,0 +1,18 @@
+.banner-settings {
+  height: 632px;
+  background-image: url(../../../assets/img/banner.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 75% 0%;
+}
+.banner-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  font-family: $base_font;
+  color: white;
+  text-align: center;
+  font-size: 77px;
+  font-weight: 700;
+  text-shadow: 5px -2px #00000040;
+}

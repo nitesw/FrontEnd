@@ -1,4 +1,5 @@
 @import "./header";
+@import "./banner";
 @import "./footer";
 
 body {
@@ -10,7 +11,7 @@ header {
   font-family: $base_font;
 }
 .navbar-settings {
-  background-image: url(../../../assets/img/navbar_background.png);
+  background-image: url(../../../assets/img/navbar-background.png);
   background-repeat: no-repeat;
   background-size: 100%;
   color: white;
@@ -22,11 +23,16 @@ header {
 }
 .logo {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
 .logo-text {
-  display: block;
+  margin-left: 20px;
   text-align: center;
   font-size: 15px;
   text-transform: uppercase;
@@ -36,6 +42,7 @@ header {
   justify-content: space-between;
 }
 .navbar-items {
+  margin-left: 100px;
   list-style: none;
   display: flex;
   align-items: center;
@@ -48,7 +55,7 @@ header {
 .searchbox-settings {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  position: relative;
 }
 .searchbox {
   height: 41px;
@@ -56,4 +63,28 @@ header {
   border: none;
   border-radius: 12px;
   background-color: #276f98;
+  color: white;
+  font-size: 16px;
+}
+.searchicon {
+  position: absolute;
+  top: 41px;
+  left: 200px;
+}
+
+@media (width < 1400px) {
+  .navbar-items {
+    margin-left: 0px;
+  }
+  .logo {
+    justify-content: space-between;
+  }
+  .logo-text {
+    margin-left: 0px;
+  }
+}
+@media (width < 1200px) {
+  .logo-text {
+    font-size: 13px;
+  }
 }
