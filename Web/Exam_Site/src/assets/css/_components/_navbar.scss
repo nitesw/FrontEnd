@@ -1,9 +1,59 @@
 @import "./header";
 @import "./footer";
 
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
 header {
   font-family: $base_font;
 }
+.navbar-settings {
+  background-image: url(../../../assets/img/navbar_background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  font-size: 16px;
+  font-family: $base_font;
+}
 .navbar {
-  color: red;
+  display: flex;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-text {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.navbar-item-a {
+  text-decoration: none;
+  color: white;
+  margin-left: 30px;
+}
+.searchbox-settings {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.searchbox {
+  height: 41px;
+  width: 224px;
+  border: none;
+  border-radius: 12px;
+  background-color: #276f98;
 }
