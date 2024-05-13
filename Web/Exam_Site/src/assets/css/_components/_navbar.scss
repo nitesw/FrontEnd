@@ -1,5 +1,7 @@
 @import "./header";
 @import "./banner";
+@import "./second_banner";
+@import "./news_section";
 @import "./footer";
 
 body {
@@ -13,13 +15,19 @@ header {
 .navbar-settings {
   background-image: url(../../../assets/img/navbar-background.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   color: white;
   font-size: 16px;
   font-family: $base_font;
 }
 .navbar {
   display: flex;
+  justify-content: space-between;
+}
+.navbar-hidden-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .logo {
   display: flex;
@@ -72,6 +80,91 @@ header {
   left: 200px;
 }
 
+#menu-toggle {
+  opacity: 0;
+}
+#menu-toggle:checked ~ .menu-btn > span {
+  transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu-toggle:checked ~ .menu-btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .navbar-hamburger-items {
+  visibility: visible;
+  left: 0;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #fff;
+
+  transition-duration: 0.25s;
+}
+.menu-btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu-btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.hamburger-menu {
+  position: relative;
+}
+.navbar-hamburger-items {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+
+  width: 170px;
+  height: 100%;
+
+  margin: 0;
+  padding: 80px 0;
+
+  list-style: none;
+
+  background-color: #276f98;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+
+  transition-duration: 0.25s;
+}
+.navbar-hamburger-item-a {
+  display: block;
+  padding: 7px 24px;
+
+  color: #fff;
+
+  font-size: 18px;
+  font-weight: 400;
+
+  text-decoration: none;
+
+  transition-duration: 0.25s;
+}
+.navbar-hamburger-item-a:hover {
+  background-color: #1d5a7e;
+}
+
 @media (width < 1400px) {
   .navbar-items {
     margin-left: 0px;
@@ -86,5 +179,31 @@ header {
 @media (width < 1200px) {
   .logo-text {
     font-size: 13px;
+  }
+}
+@media (width < 992px) {
+  .logo {
+    justify-content: center;
+  }
+  .logo img {
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+  }
+  .searchbox-settings {
+    display: none;
+  }
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 11px;
+    left: 35px;
+
+    width: 26px;
+    height: 26px;
+
+    cursor: pointer;
+    z-index: 1;
   }
 }

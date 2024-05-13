@@ -1,0 +1,140 @@
+.second-banner-items {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.second-banner-img img {
+  width: 500px;
+}
+.second-banner-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  line-height: 2;
+  left: 325px;
+  bottom: 150px;
+  padding: 75px 50px 10px 50px;
+  width: 792px;
+  height: 250px;
+  background-color: rgba($color: #eeeeee94, $alpha: 0.55);
+  font-family: $base_font;
+  font-size: 15px;
+}
+.first-line {
+  position: absolute;
+  top: 135px;
+  right: 125px;
+  left: 1217px;
+  background-color: #ef6621;
+  width: 2px;
+  height: 200px;
+  z-index: 1;
+}
+.second-line {
+  position: absolute;
+  top: 135px;
+  left: 1019px;
+  right: 125px;
+  background-color: #ef6621;
+  width: 200px;
+  height: 2px;
+  z-index: 1;
+}
+
+@media (width < 1400px) {
+  .second-banner-img img {
+    width: 400px;
+  }
+  .second-banner-text {
+    left: 325px;
+    bottom: 50px;
+    padding: 75px 50px 30px 50px;
+    width: 600px;
+    height: 250px;
+    font-size: 14px;
+  }
+  .first-line {
+    top: 90px;
+    right: 137px;
+    left: auto;
+  }
+  .second-line {
+    top: 90px;
+    right: 137px;
+    left: auto;
+  }
+}
+@media (width < 1200px) {
+  .second-banner-img img {
+    width: 300px;
+  }
+  .second-banner-text {
+    left: 200px;
+    bottom: 50px;
+    padding: 75px 50px 30px 50px;
+    width: 500px;
+    height: 150px;
+    font-size: 11px;
+  }
+  .first-line {
+    top: 75px;
+    right: 182px;
+    left: auto;
+  }
+  .second-line {
+    top: 75px;
+    right: 182px;
+    left: auto;
+  }
+}
+@media (width < 992px) {
+  .second-banner-items {
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .second-banner-text {
+    z-index: -2;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .first-line {
+    top: 15px;
+    right: 70px;
+    z-index: -1;
+  }
+  .second-line {
+    top: 15px;
+    right: 70px;
+    z-index: -1;
+  }
+}
+@media (width < 768px) {
+  .second-banner-items {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .second-banner-text {
+    padding: 0px 15px;
+    font-size: 8px;
+    line-height: 1.4;
+  }
+  .first-line {
+    top: 5px;
+    right: 0px;
+    left: 10px;
+    height: 20px;
+  }
+  .second-line {
+    top: 5px;
+    right: 0px;
+    left: 10px;
+    width: 40px;
+  }
+}
