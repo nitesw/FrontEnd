@@ -1,0 +1,38 @@
+.news-banner-settings {
+  display: flex;
+  align-items: center;
+}
+.news-banner-img {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  margin-right: 20px;
+}
+.news-banner-header {
+  font-family: $base-font;
+  font-size: 27px;
+  font-weight: 600;
+}
+.news-banner-text {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 15px;
+}
+
+@media (width < 992px) {
+  .news-banner-header {
+    margin-top: 150px;
+  }
+  .news-banner-text {
+    margin-bottom: 150px;
+  }
+}
+@media (width < 768px) {
+  .news-banner-header {
+    font-size: 15px;
+    margin-top: 100px;
+  }
+  .news-banner-text {
+    font-size: 12px;
+    margin-bottom: 100px;
+  }
+}
