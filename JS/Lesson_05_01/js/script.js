@@ -1,11 +1,11 @@
-const GetApiData = (url) => {
+const GetApiData = (url, callback) => {
   const result = fetch(url)
     .then((response) => {
       const data = response.json();
       return data;
     })
     .then((data) => {
-      return data;
+      callback(data);
     })
     .catch((e) => console.log("e", e));
 
@@ -15,9 +15,9 @@ const GetApiData = (url) => {
 let root = document.getElementById("root");
 root.setAttribute("class", "container");
 
-let CreateCurrencyTable = (url) => {
-  const apiData = GetApiData(url);
-  apiData.then((data) => console.log(data));
+let CreateCurrencyTable = (data) => {
+  //   const apiData = GetApiData(url);
+  //   apiData.then((data) => console.log(data));
 
   let divRow = document.createElement("div");
   divRow.setAttribute("class", "row");
@@ -48,31 +48,29 @@ let CreateCurrencyTable = (url) => {
   tableRowForHeaders.appendChild(tableHeaderBuy);
   tableRowForHeaders.appendChild(tableHeaderSell);
 
-  apiData.then((data) =>
-    data.forEach((currency) => {
-      let tableRowCurrency = document.createElement("tr");
+  data.forEach((currency) => {
+    let tableRowCurrency = document.createElement("tr");
 
-      let rowThCurrency = document.createElement("th");
-      rowThCurrency.setAttribute("scope", "row");
-      rowThCurrency.setAttribute("class", "th-currency");
-      rowThCurrency.innerText = currency.ccy;
+    let rowThCurrency = document.createElement("th");
+    rowThCurrency.setAttribute("scope", "row");
+    rowThCurrency.setAttribute("class", "th-currency");
+    rowThCurrency.innerText = currency.ccy;
 
-      let rowTdBuy = document.createElement("td");
-      rowTdBuy.setAttribute("class", "td-currency");
-      rowTdBuy.innerText = currency.buy;
+    let rowTdBuy = document.createElement("td");
+    rowTdBuy.setAttribute("class", "td-currency");
+    rowTdBuy.innerText = currency.buy;
 
-      let rowTdSell = document.createElement("td");
-      rowTdSell.setAttribute("class", "td-currency");
-      rowTdSell.innerText = currency.sale;
+    let rowTdSell = document.createElement("td");
+    rowTdSell.setAttribute("class", "td-currency");
+    rowTdSell.innerText = currency.sale;
 
-      tableRowCurrency.appendChild(rowThCurrency);
-      tableRowCurrency.appendChild(rowTdBuy);
-      tableRowCurrency.appendChild(rowTdSell);
+    tableRowCurrency.appendChild(rowThCurrency);
+    tableRowCurrency.appendChild(rowTdBuy);
+    tableRowCurrency.appendChild(rowTdSell);
 
-      tableCurrency.appendChild(tableRowCurrency);
-    })
-  );
+    tableCurrency.appendChild(tableRowCurrency);
+  });
 };
 
 const URL1 = "https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=5";
-CreateCurrencyTable(URL1);
+GetApiData(URL1, CreateCurrencyTable);
