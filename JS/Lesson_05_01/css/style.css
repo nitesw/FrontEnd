@@ -1,0 +1,14 @@
+.table {
+  text-align: center;
+}
+.th-currency {
+  background-color: #e9ebee;
+  border: 1px solid black;
+  padding: 15px 0px;
+  font-size: 20px;
+}
+.td-currency {
+  padding: 15px 0px;
+  border: 1px solid black;
+  font-size: 18px;
+}
