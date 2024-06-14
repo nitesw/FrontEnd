@@ -52,6 +52,8 @@ let gameLogic = () => {
           firstCard.cardDiv.getAttribute("data-item") ===
           secondCard.cardDiv.getAttribute("data-item")
         ) {
+          firstCard.cardDiv.classList.toggle("matched");
+          secondCard.cardDiv.classList.toggle("matched");
           firstCard = null;
           secondCard = null;
           blockClick = false;
@@ -76,6 +78,7 @@ let gameLogic = () => {
             firstCard.cardDiv.classList.toggle("card-pressed");
             secondCard.img.classList.toggle("hide");
             secondCard.cardDiv.classList.toggle("card-pressed");
+
             firstCard = null;
             secondCard = null;
             blockClick = false;

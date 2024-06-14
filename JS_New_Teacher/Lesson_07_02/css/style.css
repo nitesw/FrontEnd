@@ -26,6 +26,9 @@
 .hide {
   visibility: hidden;
 }
+.matched {
+  background-color: lightgrey;
+}
 .mini-menu {
   display: flex;
   flex-direction: column;
