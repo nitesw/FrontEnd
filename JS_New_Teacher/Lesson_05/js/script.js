@@ -87,7 +87,7 @@ function addBlock(color, i) {
   listItem.style.backgroundColor = color;
   listItem.dataset.index = i;
   listItem.ondblclick = () => {
-    const itemIndex = listItem.dataset.index;
+    const itemIndex = parseInt(listItem.dataset.index);
     const blockIndex = blocks.findIndex((block) => block.index === itemIndex);
     if (blockIndex !== -1) {
       blocks.splice(blockIndex, 1);
