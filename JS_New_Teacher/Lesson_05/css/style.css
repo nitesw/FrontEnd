@@ -1,69 +1,69 @@
 html {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.div-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgb(248, 235, 219);
-}
-.list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  list-style: none;
-  padding-left: 0;
-}
-.list-item {
-  height: 40px;
-  width: 60px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-.div-btn {
-  display: flex;
-  justify-content: center;
-}
-
-.traffic-light {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-}
-.light-list {
-  width: 240px;
-  height: 80px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  border: 2px solid lightgray;
-  border-radius: 10px;
-}
-.light-list-item {
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-}
-.next-btn {
-  margin: 16px 0px 16px 10px;
-  border: none;
-  border-radius: 4px;
-  font-size: 14px;
-  padding: 1px 10px;
-}
-.off {
-  background-color: lightgray;
-}
-.on-red {
-  background-color: red;
-}
-.on-yellow {
-  background-color: yellow;
-}
-.on-green {
-  background-color: green;
-}
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .div-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(248, 235, 219);
+  }
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+  }
+  .list-item {
+    height: 40px;
+    width: 60px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .div-btn {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .traffic-light {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .light-list {
+    width: 240px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+  }
+  .light-list-item {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .next-btn {
+    margin: 16px 0px 16px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 1px 10px;
+  }
+  .off {
+    background-color: lightgray;
+  }
+  .on-red {
+    background-color: red;
+  }
+  .on-yellow {
+    background-color: yellow;
+  }
+  .on-green {
+    background-color: green;
+  }

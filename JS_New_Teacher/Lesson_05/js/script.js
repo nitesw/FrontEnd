@@ -1,3 +1,9 @@
+let index = 1;
+window.onload = () => {
+  loadBlocks();
+  loadLights();
+};
+
 // Task 1
 let colors = [
   "#FF0000",
@@ -61,15 +67,48 @@ let getRandomColor = () => {
 const list = document.getElementById("main-list");
 const btn = document.querySelector(".btn");
 
+let blocks = [];
+
 btn.onclick = () => {
+  let color = getRandomColor();
+  addBlock(color, index);
+
+  let block = {
+    index: index++,
+    color: color,
+  };
+  blocks.push(block);
+  saveBlocks();
+};
+
+function addBlock(color, i) {
   const listItem = document.createElement("li");
   listItem.classList.add("list-item");
-  listItem.style.backgroundColor = getRandomColor();
+  listItem.style.backgroundColor = color;
+  listItem.dataset.index = i;
   listItem.ondblclick = () => {
-    listItem.remove();
+    const itemIndex = listItem.dataset.index;
+    const blockIndex = blocks.findIndex((block) => block.index === itemIndex);
+    if (blockIndex !== -1) {
+      blocks.splice(blockIndex, 1);
+      listItem.remove();
+      saveBlocks();
+    }
   };
   list.appendChild(listItem);
-};
+}
+function saveBlocks() {
+  localStorage.setItem("index", JSON.stringify(index));
+  localStorage.setItem("list-data", JSON.stringify(blocks));
+}
+function loadBlocks() {
+  index = JSON.parse(localStorage.getItem("index"));
+  blocks = JSON.parse(localStorage.getItem("list-data")) ?? [];
+
+  for (const block of blocks) {
+    addBlock(block.color, block.index);
+  }
+}
 
 // Task 2
 let color = 0;
@@ -77,6 +116,10 @@ const trafficLights = document.getElementById("light-list");
 const nextBtn = document.querySelector(".next-btn");
 
 nextBtn.onclick = () => {
+  changeLight();
+};
+
+function changeLight() {
   for (let i = 0; i < trafficLights.children.length; i++) {
     trafficLights.children[i].classList.remove(
       "on-red",
@@ -88,22 +131,36 @@ nextBtn.onclick = () => {
 
   switch (color) {
     case 0:
+      saveLights();
       trafficLights.children[color].classList.remove("off");
       trafficLights.children[color].classList.add("on-red");
       color++;
       break;
     case 1:
+      saveLights();
       trafficLights.children[color].classList.remove("off");
       trafficLights.children[color].classList.add("on-yellow");
       color++;
       break;
     case 2:
+      saveLights();
       trafficLights.children[color].classList.remove("off");
       trafficLights.children[color].classList.add("on-green");
-      color -= 2;
+      color = 0;
       break;
 
     default:
       break;
   }
-};
+}
+
+function saveLights() {
+  localStorage.setItem("light", JSON.stringify(color));
+}
+function loadLights() {
+  const savedColor = JSON.parse(localStorage.getItem("light"));
+  if (savedColor !== null) {
+    color = savedColor;
+  }
+  changeLight();
+}
