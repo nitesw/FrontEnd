@@ -1,0 +1,13 @@
+.current-weather-temp {
+  line-height: 2.6rem;
+}
+.current-weather-temp-text {
+  font-size: 56px;
+}
+/* .current-weather-data div {
+  height: 168px;
+} */
+.current-weather-day-text {
+  width: 190px;
+  height: 32px;
+}
