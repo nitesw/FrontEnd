@@ -35,7 +35,6 @@ $navFiveDay.on("click", function (e) {
   });
 });
 
-
 let defaultCity = {
   cityName: "Rivne",
   countryCode: "UA",
@@ -440,36 +439,58 @@ class MyWeather {
 
       if (storedCity) {
         const { cityName, countryCode } = storedCity;
-        const weatherData = await this.getWeatherByPlaceName(cityName, countryCode);
-        data = await this.getFiveDayWeather(weatherData.coord.lat, weatherData.coord.lon);
+        const weatherData = await this.getWeatherByPlaceName(
+          cityName,
+          countryCode
+        );
+        data = await this.getFiveDayWeather(
+          weatherData.coord.lat,
+          weatherData.coord.lon
+        );
       } else {
-        const defaultCityData = await this.getWeatherByPlaceName(defaultCity.cityName, defaultCity.countryCode);
-        data = await this.getFiveDayWeather(defaultCityData.coord.lat, defaultCityData.coord.lon);
+        const defaultCityData = await this.getWeatherByPlaceName(
+          defaultCity.cityName,
+          defaultCity.countryCode
+        );
+        data = await this.getFiveDayWeather(
+          defaultCityData.coord.lat,
+          defaultCityData.coord.lon
+        );
       }
 
-      let content = '<div class="days container d-flex flex-row justify-content-between">';
+      let content =
+        '<div class="days container d-flex flex-row justify-content-between">';
       for (let i = 0; i < data.list.length; i += 8) {
         const dayData = data.list[i];
         const date = new Date(dayData.dt * 1000);
-        const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
-        const monthDay = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        const dayName = date.toLocaleDateString("en-US", { weekday: "long" });
+        const monthDay = date.toLocaleDateString("en-US", {
+          month: "short",
+          day: "numeric",
+        });
 
         content += `
-          <div class="day d-flex flex-column align-items-center p-3 mt-3 flex-grow-1">
+          <div class="day d-flex flex-column align-items-center p-3 mt-3 flex-grow-1 bg-light">
             <h3 class="day-text text-uppercase">${dayName}</h3>
             <div class="day-data text-uppercase">${monthDay}</div>
             <img
-              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/${dayData.weather[0].icon}.png?raw=true"
+              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/${
+                dayData.weather[0].icon
+              }.png?raw=true"
               alt="weather-icon"
               style="width: 128px; height: 128px"
               draggable="false"
             />
-            <div class="day-temp-text fs-4">${Math.round(dayData.main.temp)}&deg;C</div>
-            <div class="day-desc-text fs-5">${dayData.weather[0].description}</div>
+            <div class="day-temp-text fs-4">${Math.round(
+              dayData.main.temp
+            )}&deg;C</div>
+            <div class="day-desc-text fs-5">${
+              dayData.weather[0].description
+            }</div>
           </div>
         `;
       }
-      content += '</div>';
+      content += "</div>";
 
       $root.html(content);
     } catch (error) {
