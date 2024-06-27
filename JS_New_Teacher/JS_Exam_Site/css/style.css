@@ -11,9 +11,6 @@
 .day-temp-text {
   font-size: 36px;
 }
-.day {
-  cursor: pointer;
-}
 .active-day {
   background-color: rgb(235, 235, 235);
 }
