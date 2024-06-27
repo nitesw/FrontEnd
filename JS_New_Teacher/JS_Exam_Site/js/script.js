@@ -18,6 +18,7 @@ $navToday.on("click", function (e) {
   $navToday.addClass("active");
   $navFiveDay.removeClass("active");
 
+  $root.html("");
   loadCurrentCity();
 });
 $navFiveDay.on("click", function (e) {
@@ -25,7 +26,13 @@ $navFiveDay.on("click", function (e) {
   $navFiveDay.addClass("active");
   $navToday.removeClass("active");
 
-  $root.html("");
+  weather.displayFiveDays(null);
+
+  const $days = $(".days");
+  $days.children().on("click", function () {
+    $(this).addClass("active-day").removeClass("bg-light");
+    $(this).siblings().removeClass("active-day").addClass("bg-light");
+  });
 });
 
 let defaultCity = {
@@ -414,6 +421,82 @@ class MyWeather {
       console.log("error");
       return null;
     }
+  }
+
+  displayFiveDays(data) {
+    let content = `<div class="days container d-flex flex-row justify-content-between">
+        <div
+          class="day d-flex flex-column align-items-center active-day p-3 mt-3 flex-grow-1"
+        >
+          <h3 class="day-text text-uppercase">tonight</h3>
+          <div class="day-data text-uppercase">JUN 30</div>
+          <img
+            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/01d.png?raw=true"
+            alt="weather-icon"
+            style="width: 128px; height: 128px"
+            draggable="false"
+          />
+          <div class="day-temp-text fw-bold text-primary mt-1">27°C</div>
+          <div class="day-feel-text">Clear, Warm</div>
+        </div>
+        <div
+          class="day d-flex flex-column align-items-center bg-light p-3 mt-3 flex-grow-1"
+        >
+          <h3 class="day-text text-uppercase">sun</h3>
+          <div class="day-data text-uppercase">JUL 01</div>
+          <img
+            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/01d.png?raw=true"
+            alt="weather-icon"
+            style="width: 128px; height: 128px"
+            draggable="false"
+          />
+          <div class="day-temp-text fw-bold text-primary mt-1">27°C</div>
+          <div class="day-feel-text">Clear, Warm</div>
+        </div>
+        <div
+          class="day d-flex flex-column align-items-center bg-light p-3 mt-3 flex-grow-1"
+        >
+          <h3 class="day-text text-uppercase">mon</h3>
+          <div class="day-data text-uppercase">JUL 02</div>
+          <img
+            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/01d.png?raw=true"
+            alt="weather-icon"
+            style="width: 128px; height: 128px"
+            draggable="false"
+          />
+          <div class="day-temp-text fw-bold text-primary mt-1">27°C</div>
+          <div class="day-feel-text">Clear, Warm</div>
+        </div>
+        <div
+          class="day d-flex flex-column align-items-center bg-light p-3 mt-3 flex-grow-1"
+        >
+          <h3 class="day-text text-uppercase">tue</h3>
+          <div class="day-data text-uppercase">JUL 03</div>
+          <img
+            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/01d.png?raw=true"
+            alt="weather-icon"
+            style="width: 128px; height: 128px"
+            draggable="false"
+          />
+          <div class="day-temp-text fw-bold text-primary mt-1">27°C</div>
+          <div class="day-feel-text">Clear, Warm</div>
+        </div>
+        <div
+          class="day d-flex flex-column align-items-center bg-light p-3 mt-3 flex-grow-1"
+        >
+          <h3 class="day-text text-uppercase">wed</h3>
+          <div class="day-data text-uppercase">JUL 04</div>
+          <img
+            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/01d.png?raw=true"
+            alt="weather-icon"
+            style="width: 128px; height: 128px"
+            draggable="false"
+          />
+          <div class="day-temp-text fw-bold text-primary mt-1">27°C</div>
+          <div class="day-feel-text">Clear, Warm</div>
+        </div>
+      </div>`;
+    $root.html(content);
   }
 }
 
