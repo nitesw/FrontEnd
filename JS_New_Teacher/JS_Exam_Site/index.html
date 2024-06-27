@@ -33,10 +33,12 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
               <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Today</a>
+                  <a class="nav-link today-forecast active" href="#">Today</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">5-day forecast</a>
+                  <a class="nav-link five-day-forecast" href="#"
+                    >5-day forecast</a
+                  >
                 </li>
               </ul>
               <form class="d-flex">
@@ -45,7 +47,10 @@
                   type="search"
                   placeholder="Search"
                 />
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+                <button
+                  class="search-btn btn btn-secondary my-2 my-sm-0"
+                  type="submit"
+                >
                   Search
                 </button>
               </form>
@@ -54,6 +59,7 @@
         </nav>
       </div>
     </div>
+
     <div id="root"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
