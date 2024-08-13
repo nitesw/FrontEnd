@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ meta_description }}" />
+    <link rel="stylesheet" type="text/css" href="assets/css/app.min.css" />
+  </head>
+  <body {% if bodyClass %}class="{{ bodyClass }}" {% endif %}>
+    {% include "_html/_base/_includes/_top_navbar.html" %} {% include
+    "_html/_base/_includes/_navbar.html" %} {% include
+    "_html/_base/_includes/_banner_default.html" %}
+    <h1>Contact page</h1>
+    {% include "_html/_base/_includes/_footer.html" %}
+    <script src="assets/js/app.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+.swapi {
+  text-align: center;
+  margin-top: 20px;
+}
+.th-swapi {
+  background-color: #efdbee;
+  border: 1px solid black;
+  padding: 5px 0px;
+}
+.td-swapi-name {
+  background-color: #e5f9ed;
+  border: 1px solid black;
+}
+.td-swapi {
+  background-color: #f8f6f6;
+  border: 1px solid black;
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.nav-btn-hide {
+  display: none;
+}
+.nav-btn-show {
+  display: flex;
+}
+
+.load {
+  height: 376px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner-hide {
+  display: none;
+}
+.spinner-show {
+  display: flex;
+}
+
+.td-swapi-img {
+  width: 60px;
+}

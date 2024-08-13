@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson_07</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="header-menu-color">
+      <div class="container mx-auto">
+        <header class="header-menu hidden lg:block">
+          <div class="grid grid-cols-12">
+            <div class="local-sites col-span-2">
+              <div class="local-sites-label">Local sites:</div>
+              <div class="local-sites-img">
+                <a href="#"
+                  ><img src="./img/location-US.png" alt="location-US"
+                /></a>
+                <a href="#"
+                  ><img src="./img/location-CA.png" alt="location-CA"
+                /></a>
+              </div>
+            </div>
+            <div class="contact-panel col-span-10">
+              <span class="contact-panel-label">Toll free</span>
+              <a href="#" class="contact-panel-btn-a"
+                ><button class="contact-panel-btn">
+                  <img
+                    src="./img/white-phone-icon.ico"
+                    alt="white-phone-img"
+                  />+1(888) 6080052
+                </button></a
+              >
+              <a href="#" class="contact-panel-btn-a"
+                ><button class="contact-panel-btn">
+                  <img
+                    src="./img/white-phone-icon.ico"
+                    alt="white-phone-img"
+                  />+1(888) 6506021
+                </button></a
+              >
+              <a href="#" class="contact-panel-btn-a"
+                ><button class="contact-panel-btn contact-panel-chat-btn">
+                  <img
+                    src="./img/message-icon.ico"
+                    alt="white-phone-img"
+                  />ONLINE CHAT
+                </button></a
+              >
+              <a href="#" class="contact-panel-btn-a"
+                ><button class="contact-panel-btn contact-panel-login-btn">
+                  LOG IN<img
+                    src="./img/login-icon.ico"
+                    style="margin-left: 5px; margin-right: 0px"
+                    alt="login-icon"
+                  /></button
+              ></a>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <div class="nav-menu-color">
+      <div class="container mx-auto">
+        <nav class="nav-menu">
+          <div class="nav-menu-settings">
+            <a href="#">
+              <img
+                src="./img/main-logo.svg"
+                alt="main-logo"
+                class="main-logo"
+              />
+            </a>
+            <div class="sm:flex lg:hidden hidden-nav-btns">
+              <a href="#" class="hidden-btn-a hidden md:inline-block"
+                ><button class="hidden-btn">
+                  <img
+                    src="./img/phone-icon.ico"
+                    alt="phone-img"
+                    style="margin-left: 0px; margin-right: 5px"
+                  />+1(888) 6506021
+                </button></a
+              >
+              <a href="#" class="hidden-btn-a md:hidden"
+                ><button class="hidden-btn">
+                  <img src="./img/phone-icon.ico" alt="phone-img" /></button
+              ></a>
+
+              <a href="#" class="hidden-btn-a hidden md:inline-block"
+                ><button class="hidden-btn hidden-order-btn">
+                  Order now<img
+                    src="./img/shopping-bag-icon.ico"
+                    alt="shopping-bag-img"
+                  /></button
+              ></a>
+              <a href="#" class="hidden-btn-a md:hidden"
+                ><button class="hidden-btn hidden-order-btn">
+                  <img
+                    src="./img/shopping-bag-icon.ico"
+                    alt="shopping-bag-img"
+                  /></button
+              ></a>
+
+              <a href="#" class="hidden-btn-a hidden md:inline-block"
+                ><button class="hidden-btn hidden-login-btn">
+                  LOG IN<img
+                    src="./img/login-icon.ico"
+                    alt="login-img"
+                  /></button
+              ></a>
+              <a href="#" class="hidden-btn-a md:hidden"
+                ><button class="hidden-btn hidden-login-btn">
+                  <img src="./img/login-icon.ico" alt="login-img" /></button
+              ></a>
+            </div>
+            <button
+              data-collapse-toggle="navbar-default"
+              type="button"
+              class="nav-mobile-btn text-sm rounded-xl lg:hidden"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+
+            <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
+              <ul class="nav-menu-items flex-col lg:flex-row">
+                <li>
+                  <a href="#" class="nav-item">ABOUT US</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-item">HOW IT WORKS</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-item nav-spec-item">ORDER NOW</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-item">RESUME</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-item">PRICES</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-item">DISCOUNTS</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-item">FREE ESSAYS</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-item">BLOG</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="main-menu-color">
+      <div class="container mx-auto">
+        <div class="main-menu grid grid-cols-12">
+          <div class="col-span-12 md:col-span-5 order-last md:order-first">
+            <div class="main-menu-items">
+              <span class="main-menu-man">
+                <img
+                  src="./img/head-man.svg"
+                  alt="head-man"
+                  width="311"
+                  height="610"
+                />
+              </span>
+              <div class="main-menu-essay-calc">
+                <span class="main-menu-essay-calc-label"
+                  >GET A PRICE QUOTE.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 md:col-span-7 order-first md:order-last">
+            <div class="main-menu-text-settings">
+              <div class="main-menu-text">
+                <p class="main-menu-top-text">
+                  <strong>SEARCH</strong>
+                  <span>PROFESSIONAL</span>
+                  <br />
+                  WRITING SERVICES?
+                </p>
+                <h3 class="main-menu-middle-text">
+                  Need help in writing your essay,<br />
+                  coursework or disseration?
+                </h3>
+                <p class="main-menu-bottom-text">
+                  <strong>123</strong>helpme.org can<br />
+                  solve your problems.
+                </p>
+              </div>
+              <div class="main-menu-order-btn">
+                <a href="#" class="main-menu-order-btn-a">123 ORDER NOW!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>

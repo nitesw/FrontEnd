@@ -1,0 +1,41 @@
+.borders {
+  margin-top: 20px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.clear-btn {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: salmon;
+  padding: 2px 12px;
+  border-radius: 4px;
+}
+
+.shop-form-div {
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  margin-bottom: 10px;
+}
+#description {
+  vertical-align: top;
+}
+.label-for-product {
+  display: block;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+.submit-btn {
+  margin-top: 40px;
+  width: 100%;
+  padding: 4px 6px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: lightgreen;
+  font-family: var(--bs-body-font-family);
+}

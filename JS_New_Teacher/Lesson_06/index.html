@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_Lesson_06</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container borders">
+      <div class="nav-menu">
+        <h1>Internet-shop</h1>
+        <button class="clear-btn">Clear table</button>
+      </div>
+
+      <table id="shop-table" class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <br />
+      <br />
+    </div>
+    <div class="container">
+      <h2 class="header">Add your own item</h2>
+      <form id="shop-form">
+        <div class="shop-form-div">
+          <div>
+            <label for="product-name" class="label-for-product">Name</label>
+            <input type="text" name="item-name" id="product-name" />
+          </div>
+          <div>
+            <label for="description" class="label-for-product"
+              >Description</label
+            >
+            <textarea name="description" id="product-description"></textarea>
+          </div>
+          <div>
+            <label for="product-quantity" class="label-for-product"
+              >Quantity</label
+            >
+            <input
+              type="number"
+              name="product-quantity"
+              id="product-quantity"
+            />
+          </div>
+          <div>
+            <label for="price" class="label-for-product">Price</label>
+            <input type="number" name="price" id="product-price" />
+          </div>
+        </div>
+        <div>
+          <button type="submit" class="submit-btn">ADD ITEM</button>
+        </div>
+      </form>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

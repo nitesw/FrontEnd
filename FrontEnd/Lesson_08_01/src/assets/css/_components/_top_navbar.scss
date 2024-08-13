@@ -1,0 +1,68 @@
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.top-navbar {
+  background-color: #0d93a3;
+  color: white;
+  font-size: 14px;
+  font-family: $base_font;
+}
+.top-navbar-items {
+  display: flex;
+  justify-content: space-between;
+}
+.local-sites {
+  display: flex;
+  align-items: center;
+  padding: 11px 0px;
+}
+.local-sites-img {
+  display: flex;
+  align-items: center;
+}
+.local-sites-img a {
+  margin-left: 15px;
+}
+.local-sites a img {
+  height: 32px;
+  width: 32px;
+}
+
+.contact-panel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.contact-panel-label {
+  margin-right: 5px;
+}
+.contact-panel-btn-a {
+  display: inline-block;
+  margin-right: 15px;
+}
+.contact-panel-btn {
+  background-color: transparent;
+  color: white;
+  padding: 7px;
+  border: 1px solid white;
+  border-radius: 3.5px;
+}
+.contact-panel-btn:hover {
+  background-color: #c5e4e9;
+  color: #0d93a3;
+}
+.contact-panel-chat-btn {
+  color: #0d93a3;
+  background-color: white;
+  border: 1px solid transparent;
+}
+.contact-panel-login-btn {
+  background-color: #52579c;
+  border: 1px solid transparent;
+}
+.contact-panel-login-btn:hover {
+  color: white;
+  background-color: #52579c;
+}

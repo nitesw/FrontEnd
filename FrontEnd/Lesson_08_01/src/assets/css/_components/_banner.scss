@@ -1,0 +1,119 @@
+.main-menu {
+  background-color: #52579c;
+  height: 655px;
+  font-family: $base_font;
+}
+.main-menu-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 35px;
+}
+.main-menu-essay-calc {
+  width: 350px;
+  height: 620px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
+  background-color: rgba(111, 115, 173, 0.6);
+}
+.main-menu-essay-calc-label {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+}
+.main-menu-man {
+  position: absolute;
+  top: 45px;
+  left: 330px;
+  right: -183px;
+  bottom: -35px;
+  z-index: -1;
+}
+.main-menu-text-settings {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+.main-menu-text {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main-menu-top-text {
+  font-size: 45px;
+  font-family: $bold_base_font;
+  line-height: 1.2;
+  margin: 45px 0px;
+}
+.main-menu-top-text strong {
+  font-size: 56px;
+  color: #f26695;
+  font-weight: 500;
+}
+.main-menu-top-text span {
+  font-size: 29px;
+}
+.main-menu-middle-text {
+  font-size: 20px;
+  margin: 20px 0px;
+}
+.main-menu-bottom-text {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 25px 0px;
+}
+.main-menu-bottom-text strong {
+  font-size: 41px;
+}
+.main-menu-order-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-menu-order-btn-a {
+  text-decoration: none;
+  color: #cccccc;
+  background: linear-gradient(to right, #c25277 50%, #f26695 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 1s ease;
+  padding: 15px 60px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.main-menu-order-btn-a:hover {
+  color: white;
+  background-position: right bottom;
+}
+
+@media (width < 1200px) {
+  .main-menu-top-text {
+    font-size: 29px;
+  }
+  .main-menu-top-text strong {
+    font-size: 38px;
+  }
+  .main-menu-bottom-text {
+    font-size: 22px;
+  }
+  .main-menu-man {
+    top: 156px;
+    bottom: -35px;
+    right: -130px;
+  }
+  .main-menu-man img {
+    width: 254px;
+  }
+}
+@media (width < 992px) {
+  .main-menu-man {
+    display: none;
+  }
+}
